@@ -1,4 +1,4 @@
-import "./Productcard.css";
+import "./ProductCard.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
