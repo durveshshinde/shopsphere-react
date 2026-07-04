@@ -1,0 +1,176 @@
+.categories{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.categories h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    color:#222;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.category-card{
+
+    background:#fff;
+
+    padding:40px 25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.category-icon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.category-card h3{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.category-card p{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:1024px){
+
+    .category-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .categories h2{
+
+        font-size:36px;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+    .categories{
+
+        width:95%;
+
+        margin:60px auto;
+
+    }
+
+    .categories h2{
+
+        font-size:30px;
+
+        margin-bottom:35px;
+
+    }
+
+    .category-container{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .category-card{
+
+        padding:30px 20px;
+
+    }
+
+    .category-icon{
+
+        font-size:50px;
+
+    }
+
+    .category-card h3{
+
+        font-size:22px;
+
+    }
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media(max-width:480px){
+
+    .categories h2{
+
+        font-size:26px;
+
+    }
+
+    .category-card{
+
+        padding:25px 15px;
+
+    }
+
+    .category-icon{
+
+        font-size:42px;
+
+    }
+
+    .category-card h3{
+
+        font-size:20px;
+
+    }
+
+    .category-card p{
+
+        font-size:14px;
+
+    }
+
+}

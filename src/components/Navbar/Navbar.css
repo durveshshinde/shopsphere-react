@@ -1,0 +1,450 @@
+/* Navbar */
+
+.navbar{
+    background:#fff;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+}
+
+/* Logo */
+
+.logo a{
+    font-size:30px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+/* Right Side */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+/* Search */
+
+.search-box{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    background:#f3f4f6;
+    padding:10px 15px;
+    border-radius:30px;
+}
+
+.search-box input{
+    border:none;
+    background:transparent;
+    width:180px;
+}
+
+/* Icons */
+
+.icon{
+    font-size:20px;
+    transition:.3s;
+}
+
+.icon:hover{
+    color:#2563eb;
+}
+
+/* Login */
+
+.login-btn{
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:25px;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1d4ed8;
+}
+
+/* Toast Notification */
+
+.toast{
+    position: fixed;
+    top: 90px;
+    right: 30px;
+
+    background: #22c55e;
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+
+    z-index: 9999;
+
+    animation: slideIn .3s ease;
+}
+
+@keyframes slideIn{
+
+    from{
+        opacity:0;
+        transform:translateX(100%);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* Cart Badge */
+
+.cart-icon{
+    position: relative;
+}
+
+.cart-count{
+
+    position: absolute;
+
+    top: -10px;
+    right: -12px;
+
+    width: 22px;
+    height: 22px;
+
+    background: #ef4444;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    border: 2px solid white;
+
+    animation: pop .3s ease;
+}
+
+@keyframes pop{
+
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+/* Wishlist Badge */
+
+.wishlist-icon{
+    position:relative;
+}
+
+.wishlist-count{
+
+    position:absolute;
+
+    top:-8px;
+    right:-10px;
+
+    width:20px;
+    height:20px;
+
+    border-radius:50%;
+
+    background:#ef4444;
+    color:white;
+
+    font-size:12px;
+    font-weight:600;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.user-section{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.user-name{
+
+    font-weight:600;
+
+    color:#222;
+
+    font-size:15px;
+
+}
+
+.logout-btn{
+
+    border:none;
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+}
+
+.profile-btn{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.user-section{
+
+    position:relative;
+
+}
+
+.profile-menu{
+
+    position:absolute;
+
+    top:55px;
+
+    right:0;
+
+    width:200px;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+    overflow:hidden;
+
+    z-index:9999;
+
+}
+
+.profile-menu a,
+.profile-menu button{
+
+    display:block;
+
+    width:100%;
+
+    padding:15px;
+
+    text-align:left;
+
+    border:none;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    text-decoration:none;
+
+    color:#333;
+
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover{
+
+    background:#f5f5f5;
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:1024px){
+
+    .container{
+        width:95%;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+
+    .search-box input{
+        width:120px;
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+    .container{
+
+        flex-direction:column;
+
+        gap:18px;
+
+        padding:15px 0;
+
+    }
+
+    .logo a{
+
+        font-size:28px;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .nav-right{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+        width:100%;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+    .search-box input{
+
+        width:100%;
+
+    }
+
+    .login-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media (max-width:480px){
+
+    .logo a{
+
+        font-size:24px;
+
+    }
+
+    .nav-links{
+
+        font-size:15px;
+
+    }
+
+    .search-box{
+
+        padding:10px;
+
+    }
+
+}

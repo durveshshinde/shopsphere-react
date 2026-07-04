@@ -1,0 +1,204 @@
+.newsletter{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:90px auto;
+
+    text-align:center;
+
+    padding:70px 30px;
+
+    border-radius:25px;
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+}
+
+.newsletter h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.newsletter p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    opacity:.95;
+
+}
+
+.newsletter-box{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.newsletter-box input{
+
+    width:400px;
+
+    padding:16px 22px;
+
+    border:none;
+
+    border-radius:50px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.newsletter-box button{
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#111;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.newsletter-box button:hover{
+
+    background:white;
+
+    color:#111;
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:992px){
+
+    .newsletter{
+
+        padding:60px 25px;
+
+    }
+
+    .newsletter h2{
+
+        font-size:36px;
+
+    }
+
+    .newsletter-box input{
+
+        width:320px;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+    .newsletter{
+
+        width:95%;
+
+        padding:45px 20px;
+
+    }
+
+    .newsletter h2{
+
+        font-size:30px;
+
+    }
+
+    .newsletter p{
+
+        font-size:16px;
+
+    }
+
+    .newsletter-box{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .newsletter-box input{
+
+        width:100%;
+
+        max-width:350px;
+
+    }
+
+    .newsletter-box button{
+
+        width:100%;
+
+        max-width:350px;
+
+    }
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media(max-width:480px){
+
+    .newsletter h2{
+
+        font-size:26px;
+
+    }
+
+    .newsletter p{
+
+        font-size:15px;
+
+    }
+
+    .newsletter{
+
+        padding:40px 15px;
+
+    }
+
+}

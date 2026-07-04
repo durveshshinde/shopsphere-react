@@ -1,0 +1,206 @@
+.featured-offers{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:90px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.offer-card{
+
+    padding:60px;
+
+    border-radius:20px;
+
+    color:white;
+
+    overflow:hidden;
+
+    position:relative;
+
+    transition:.3s;
+
+    min-height:280px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.offer-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.left-offer{
+
+    background:linear-gradient(135deg,#ff6b6b,#ff9f43);
+
+}
+
+.right-offer{
+
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+
+}
+
+.offer-card p{
+
+    letter-spacing:2px;
+
+    font-size:15px;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+}
+
+.offer-card h2{
+
+    font-size:40px;
+
+    margin-bottom:30px;
+
+    line-height:1.2;
+
+}
+
+.offer-card button{
+
+    width:170px;
+
+    background:white;
+
+    color:#111;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.offer-card button:hover{
+
+    background:#111;
+
+    color:white;
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:992px){
+
+    .featured-offers{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .offer-card{
+
+        padding:50px;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+    .featured-offers{
+
+        width:95%;
+
+        margin:70px auto;
+
+        gap:20px;
+
+    }
+
+    .offer-card{
+
+        padding:35px 25px;
+
+        min-height:220px;
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .offer-card h2{
+
+        font-size:30px;
+
+    }
+
+    .offer-card button{
+
+        width:220px;
+
+    }
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media(max-width:480px){
+
+    .offer-card{
+
+        padding:30px 20px;
+
+    }
+
+    .offer-card h2{
+
+        font-size:24px;
+
+    }
+
+    .offer-card p{
+
+        font-size:13px;
+
+    }
+
+    .offer-card button{
+
+        width:100%;
+
+        max-width:220px;
+
+    }
+
+}

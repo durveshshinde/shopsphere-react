@@ -1,0 +1,102 @@
+.sort-filter{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:20px auto;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.sort-filter label{
+
+    font-weight:600;
+
+}
+
+.sort-filter select{
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    cursor:pointer;
+
+    outline:none;
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:992px){
+
+    .sort-filter{
+
+        width:95%;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+    .sort-filter{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:10px;
+
+    }
+
+    .sort-filter select{
+
+        width:220px;
+
+    }
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media(max-width:480px){
+
+    .sort-filter{
+
+        flex-direction:column;
+
+    }
+
+    .sort-filter label{
+
+        font-size:15px;
+
+    }
+
+    .sort-filter select{
+
+        width:100%;
+
+        max-width:300px;
+
+    }
+
+}
